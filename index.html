@@ -1,49 +1,2102 @@
 <!doctype html>
 <html lang="fr">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Créer une fiche artiste Rap Jungle."><title>Rap Jungle — Créer ma fiche artiste</title>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Créer une fiche artiste Rap Jungle.">
+<title>Rap Jungle — Créer ma fiche artiste</title>
+
 <style>
-*{box-sizing:border-box}:root{--text:#f6f8f6;--muted:#b7c3b7;--line:#34523c;--orange:#ef8f1b;--orange2:#ffb13b}body{margin:0;color:var(--text);font-family:Arial,Helvetica,sans-serif;background:radial-gradient(circle at 12% 18%,rgba(88,166,84,.17),transparent 18%),radial-gradient(circle at 87% 22%,rgba(255,165,0,.1),transparent 20%),linear-gradient(180deg,#08100c,#0b1510 38%,#0a130f);min-height:100vh}a{color:inherit;text-decoration:none}.wrap{max-width:1160px;margin:auto;padding:18px 16px 50px}.top{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:18px;padding:18px;border:1px solid rgba(88,144,80,.45);border-radius:22px;background:linear-gradient(180deg,rgba(22,36,26,.94),rgba(14,24,18,.93));box-shadow:0 16px 40px rgba(0,0,0,.28)}.brand{font-size:clamp(34px,7vw,66px);font-weight:900;line-height:.88}.sub{margin-top:8px;color:#dbe7db;font-size:13px;letter-spacing:.18em}.nav{display:flex;gap:8px;flex-wrap:wrap}.btn,button{border:0;border-radius:14px;min-height:48px;padding:12px 16px;font-weight:900;cursor:pointer;background:linear-gradient(180deg,#fff,#f1f1f1);color:#111;box-shadow:0 8px 18px rgba(0,0,0,.22);font-size:14px}.secondary{background:linear-gradient(180deg,#236637,#194d29)!important;color:#fff!important}.goodbtn{background:linear-gradient(180deg,#ef8f1b,#d47306)!important;color:#fff!important}.ghost{background:#16251b!important;color:#fff!important;border:1px solid #34523c!important}.hero{text-align:center;padding:26px 10px}.eyebrow{font-size:13px;letter-spacing:.2em;font-weight:900;color:var(--orange2)}h1{font-size:clamp(36px,6vw,58px);margin:10px 0}.hero p{color:#dbe5db;max-width:730px;margin:0 auto;line-height:1.55}.layout{display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:16px;align-items:start}.panel{background:linear-gradient(180deg,rgba(18,28,21,.96),rgba(13,21,16,.97));border:1px solid rgba(74,120,76,.6);border-radius:22px;padding:19px;margin-bottom:14px;box-shadow:0 10px 28px rgba(0,0,0,.22)}.panel h2{font-size:24px;margin:0 0 5px}.panel h2:before{content:"🌿";font-size:18px;margin-right:8px}.small{font-size:13px;color:var(--muted);line-height:1.5}.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.full{grid-column:1/-1}label{display:block;font-size:14px;font-weight:800;margin:14px 0 6px;color:#d8e2d8}input,select,textarea{width:100%;min-height:48px;background:#0a100d;color:#fff;border:1px solid #3a6042;border-radius:12px;padding:10px 13px;font-size:16px}textarea{min-height:110px;resize:vertical;line-height:1.45}input:focus,select:focus,textarea:focus{outline:none;border-color:var(--orange);box-shadow:0 0 0 2px rgba(239,143,27,.15)}.required{color:var(--orange2)}.press{background:#0d1710;border:1px solid #294a31;border-radius:15px;padding:14px;margin-top:12px}.press h3{margin:0 0 4px;font-size:17px}.actions{display:flex;gap:9px;justify-content:flex-end;flex-wrap:wrap}.preview{position:sticky;top:14px}.profile-card{border:1px solid #3a6042;border-radius:18px;overflow:hidden;background:#0c1510}.preview-cover{height:112px;background:radial-gradient(circle at 25% 25%,rgba(255,177,59,.25),transparent 35%),linear-gradient(135deg,#315938,#0b140f);position:relative}.preview-avatar{position:absolute;left:18px;bottom:-34px;width:76px;height:76px;border:4px solid #111b15;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,#ef8f1b,#27623b);font-size:24px;font-weight:900;overflow:hidden}.preview-avatar img{width:100%;height:100%;object-fit:cover}.preview-body{padding:44px 16px 17px}.preview-body h3{font-size:23px;margin:0 0 7px}.meta{color:var(--orange2);font-size:13px;font-weight:900}.preview-body p{font-size:14px;color:var(--muted);line-height:1.5}.notice{padding:12px;border:1px solid #7e642e;background:#272316;border-radius:13px;margin-top:12px;font-size:13px;line-height:1.5}.success{display:none;border-color:#2f9c63;background:#14271b}.success.show{display:block}footer{text-align:center;padding:24px;color:#91a491;font-size:13px}
-@media(max-width:850px){.layout{grid-template-columns:1fr}.preview{position:static;order:-1}.profile-card{max-width:430px;margin:auto}}@media(max-width:620px){.wrap{padding:12px}.top{padding:15px}.nav{width:100%}.nav .btn{flex:1;padding:9px}.grid{grid-template-columns:1fr}.full{grid-column:auto}.panel{padding:15px}.actions button{width:100%}}
-</style></head>
-<body><div class="wrap">
-<header class="top"><a href="https://rap16barvote-jungle.vercel.app/"><div class="brand">RAP JUNGLE</div><div class="sub">CRÉATION DE FICHE ARTISTE</div></a><nav class="nav"><a class="btn secondary" href="https://rap16barvote-jungle.vercel.app/">ACCUEIL</a><a class="btn secondary" href="https://r-pertoirerapjungle.vercel.app/">RÉPERTOIRE</a><a class="btn secondary" href="https://rapjunglevip.vercel.app/">VIP</a></nav></header>
-<main><section class="hero"><div class="eyebrow">TON IDENTITÉ ARTISTIQUE</div><h1>Crée ta fiche artiste.</h1><p>Rassemble les informations utiles aux médias, salles, promoteurs, partenaires et futurs collaborateurs. Tu pourras vérifier l’aperçu avant la future validation administrative.</p></section>
-<div class="layout"><form id="artistForm">
-  <section class="panel"><h2>Identité</h2><div class="small">Les informations principales visibles dans le répertoire.</div><div class="grid"><div><label for="stageName">Nom d’artiste ou du groupe <span class="required">*</span></label><input id="stageName" name="stageName" required maxlength="80" placeholder="Nom public"></div><div><label for="artistType">Type de profil <span class="required">*</span></label><select id="artistType" name="artistType" required><option value="">Choisir</option><option>Artiste solo</option><option>Groupe</option><option>MC / rappeur</option><option>DJ</option><option>Beatmaker</option><option>Producteur</option><option>Auteur-compositeur</option></select></div><div><label for="region">Région <span class="required">*</span></label><select id="region" name="region" required><option value="">Choisir</option><option>Montréal</option><option>Laval</option><option>Lanaudière</option><option>Laurentides</option><option>Montérégie</option><option>Mauricie</option><option>Capitale-Nationale</option><option>Saguenay–Lac-Saint-Jean</option><option>Estrie</option><option>Outaouais</option><option>Autre région</option></select></div><div><label for="genre">Style ou discipline <span class="required">*</span></label><input id="genre" name="genre" required maxlength="80" placeholder="Rap, rock, DJ, arts visuels…"></div><div><label for="experienceYears">Années d’expérience</label><input id="experienceYears" name="experienceYears" type="number" min="0" max="80" placeholder="Ex. 6"></div><div><label for="photo">Adresse de la photo principale</label><input id="photo" name="photo" type="url" placeholder="https://..."></div><div class="full"><label for="presentation">Présentation courte <span class="required">*</span></label><textarea id="presentation" name="presentation" required maxlength="400" placeholder="Présente ton projet en quelques phrases."></textarea></div><div class="full"><label for="bio">Biographie complète <span class="required">*</span></label><textarea id="bio" name="bio" required maxlength="1800" placeholder="Origine du projet, parcours, identité et direction artistique."></textarea></div></div></section>
-  <section class="panel"><h2>Expérience</h2><div class="grid"><div class="full"><label for="experience">Expériences et faits marquants</label><textarea id="experience" name="experience" placeholder="Spectacles, sorties, collaborations, distinctions, médias…"></textarea></div><div><label for="influences">Influences</label><textarea id="influences" name="influences" placeholder="Artistes, mouvements ou univers."></textarea></div><div><label for="currentProject">Projet actuel</label><textarea id="currentProject" name="currentProject" placeholder="Single, EP, tournée, création en cours…"></textarea></div></div></section>
-  <section class="panel"><h2>Mini-conférence de presse</h2><div class="small">Réponds naturellement. Ces réponses donnent une voix humaine à ta fiche.</div><div class="press"><h3>Qu’est-ce qui te distingue?</h3><textarea name="distinctive" aria-label="Ce qui vous distingue"></textarea></div><div class="press"><h3>Quel message veux-tu transmettre?</h3><textarea name="message" aria-label="Message artistique"></textarea></div><div class="press"><h3>Qu’est-ce que tu prépares présentement?</h3><textarea name="preparing" aria-label="Projet en préparation"></textarea></div><div class="press"><h3>Quel type de collaboration recherches-tu?</h3><textarea name="collaboration" aria-label="Collaborations recherchées"></textarea></div></section>
-  <section class="panel"><h2>Médias, merch et contact</h2><div class="grid"><div><label for="social">Réseau social principal</label><input id="social" name="social" type="url" placeholder="https://..."></div><div><label for="website">Site Web</label><input id="website" name="website" type="url" placeholder="https://..."></div><div><label for="spotify">Spotify ou musique</label><input id="spotify" name="spotify" type="url" placeholder="https://..."></div><div><label for="youtube">YouTube ou vidéo</label><input id="youtube" name="youtube" type="url" placeholder="https://..."></div><div><label for="merchLink">Lien vers le merch</label><input id="merchLink" name="merchLink" type="url" placeholder="https://..."></div><div><label for="bookingEmail">Courriel professionnel</label><input id="bookingEmail" name="bookingEmail" type="email" placeholder="booking@..."></div><div class="full"><label for="merchText">Présentation du merch</label><textarea id="merchText" name="merchText" placeholder="Produits, collections et disponibilité."></textarea></div></div></section>
-  <section class="panel"><div class="notice">La fiche sera envoyée à Rap Jungle pour validation. Elle apparaîtra dans le répertoire uniquement après son approbation.</div><div class="success notice" id="success" role="status" aria-live="polite"></div><div class="actions"><button type="reset" class="ghost">EFFACER</button><button type="submit" class="goodbtn" id="submitButton">ENVOYER MA FICHE</button></div></section>
+*{box-sizing:border-box}
+
+:root{
+  --text:#f6f8f6;
+  --muted:#b7c3b7;
+  --line:#34523c;
+  --orange:#ef8f1b;
+  --orange2:#ffb13b;
+}
+
+body{
+  margin:0;
+  color:var(--text);
+  font-family:Arial,Helvetica,sans-serif;
+  background:
+    radial-gradient(circle at 12% 18%,rgba(88,166,84,.17),transparent 18%),
+    radial-gradient(circle at 87% 22%,rgba(255,165,0,.1),transparent 20%),
+    linear-gradient(180deg,#08100c,#0b1510 38%,#0a130f);
+  min-height:100vh;
+}
+
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+.wrap{
+  max-width:1160px;
+  margin:auto;
+  padding:18px 16px 50px;
+}
+
+.top{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:16px;
+  flex-wrap:wrap;
+  margin-bottom:18px;
+  padding:18px;
+  border:1px solid rgba(88,144,80,.45);
+  border-radius:22px;
+  background:linear-gradient(180deg,rgba(22,36,26,.94),rgba(14,24,18,.93));
+  box-shadow:0 16px 40px rgba(0,0,0,.28);
+}
+
+.brand{
+  font-size:clamp(34px,7vw,66px);
+  font-weight:900;
+  line-height:.88;
+}
+
+.sub{
+  margin-top:8px;
+  color:#dbe7db;
+  font-size:13px;
+  letter-spacing:.18em;
+}
+
+.nav{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+}
+
+.btn,button{
+  border:0;
+  border-radius:14px;
+  min-height:48px;
+  padding:12px 16px;
+  font-weight:900;
+  cursor:pointer;
+  background:linear-gradient(180deg,#fff,#f1f1f1);
+  color:#111;
+  box-shadow:0 8px 18px rgba(0,0,0,.22);
+  font-size:14px;
+}
+
+button:disabled{
+  opacity:.55;
+  cursor:not-allowed;
+}
+
+.secondary{
+  background:linear-gradient(180deg,#236637,#194d29)!important;
+  color:#fff!important;
+}
+
+.goodbtn{
+  background:linear-gradient(180deg,#ef8f1b,#d47306)!important;
+  color:#fff!important;
+}
+
+.ghost{
+  background:#16251b!important;
+  color:#fff!important;
+  border:1px solid #34523c!important;
+}
+
+.danger{
+  background:#4b2020!important;
+  color:#fff!important;
+}
+
+.hero{
+  text-align:center;
+  padding:26px 10px;
+}
+
+.eyebrow{
+  font-size:13px;
+  letter-spacing:.2em;
+  font-weight:900;
+  color:var(--orange2);
+}
+
+h1{
+  font-size:clamp(36px,6vw,58px);
+  margin:10px 0;
+}
+
+.hero p{
+  color:#dbe5db;
+  max-width:730px;
+  margin:0 auto;
+  line-height:1.55;
+}
+
+.layout{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) 330px;
+  gap:16px;
+  align-items:start;
+}
+
+.panel{
+  background:linear-gradient(180deg,rgba(18,28,21,.96),rgba(13,21,16,.97));
+  border:1px solid rgba(74,120,76,.6);
+  border-radius:22px;
+  padding:19px;
+  margin-bottom:14px;
+  box-shadow:0 10px 28px rgba(0,0,0,.22);
+}
+
+.panel h2{
+  font-size:24px;
+  margin:0 0 5px;
+}
+
+.panel h2:before{
+  content:"🌿";
+  font-size:18px;
+  margin-right:8px;
+}
+
+.small{
+  font-size:13px;
+  color:var(--muted);
+  line-height:1.5;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+}
+
+.full{
+  grid-column:1/-1;
+}
+
+label{
+  display:block;
+  font-size:14px;
+  font-weight:800;
+  margin:14px 0 6px;
+  color:#d8e2d8;
+}
+
+input,select,textarea{
+  width:100%;
+  min-height:48px;
+  background:#0a100d;
+  color:#fff;
+  border:1px solid #3a6042;
+  border-radius:12px;
+  padding:10px 13px;
+  font-size:16px;
+}
+
+textarea{
+  min-height:110px;
+  resize:vertical;
+  line-height:1.45;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+  outline:none;
+  border-color:var(--orange);
+  box-shadow:0 0 0 2px rgba(239,143,27,.15);
+}
+
+.required{
+  color:var(--orange2);
+}
+
+.press{
+  background:#0d1710;
+  border:1px solid #294a31;
+  border-radius:15px;
+  padding:14px;
+  margin-top:12px;
+}
+
+.press h3{
+  margin:0 0 4px;
+  font-size:17px;
+}
+
+.actions{
+  display:flex;
+  gap:9px;
+  justify-content:flex-end;
+  flex-wrap:wrap;
+}
+
+.preview{
+  position:sticky;
+  top:14px;
+}
+
+.profile-card{
+  border:1px solid #3a6042;
+  border-radius:18px;
+  overflow:hidden;
+  background:#0c1510;
+}
+
+.preview-cover{
+  height:112px;
+  background:
+    radial-gradient(circle at 25% 25%,rgba(255,177,59,.25),transparent 35%),
+    linear-gradient(135deg,#315938,#0b140f);
+  position:relative;
+}
+
+.preview-avatar{
+  position:absolute;
+  left:18px;
+  bottom:-34px;
+  width:76px;
+  height:76px;
+  border:4px solid #111b15;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  background:linear-gradient(135deg,#ef8f1b,#27623b);
+  font-size:24px;
+  font-weight:900;
+  overflow:hidden;
+}
+
+.preview-avatar img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.preview-body{
+  padding:44px 16px 17px;
+}
+
+.preview-body h3{
+  font-size:23px;
+  margin:0 0 7px;
+}
+
+.meta{
+  color:var(--orange2);
+  font-size:13px;
+  font-weight:900;
+}
+
+.preview-body p{
+  font-size:14px;
+  color:var(--muted);
+  line-height:1.5;
+}
+
+.notice{
+  padding:12px;
+  border:1px solid #7e642e;
+  background:#272316;
+  border-radius:13px;
+  margin-top:12px;
+  font-size:13px;
+  line-height:1.5;
+}
+
+.messagebox{
+  display:none;
+}
+
+.messagebox.show{
+  display:block;
+}
+
+.messagebox.success{
+  border-color:#2f9c63;
+  background:#14271b;
+}
+
+.messagebox.error{
+  border-color:#b84848;
+  background:#2b1515;
+}
+
+.account-panel{
+  max-width:760px;
+  margin:0 auto 20px;
+}
+
+.account-state{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:12px;
+}
+
+.connected{
+  color:#8bf0ad;
+  font-weight:900;
+}
+
+.disconnected{
+  color:#ffc66c;
+  font-weight:900;
+}
+
+.filebox{
+  border:2px dashed #3a6042;
+  border-radius:15px;
+  padding:16px;
+  background:#0c1510;
+}
+
+.filebox input{
+  border:0;
+  background:transparent;
+}
+
+.locked{
+  opacity:.45;
+  pointer-events:none;
+}
+
+footer{
+  text-align:center;
+  padding:24px;
+  color:#91a491;
+  font-size:13px;
+}
+
+@media(max-width:850px){
+  .layout{
+    grid-template-columns:1fr;
+  }
+
+  .preview{
+    position:static;
+    order:-1;
+  }
+
+  .profile-card{
+    max-width:430px;
+    margin:auto;
+  }
+}
+
+@media(max-width:620px){
+  .wrap{
+    padding:12px;
+  }
+
+  .top{
+    padding:15px;
+  }
+
+  .nav{
+    width:100%;
+  }
+
+  .nav .btn{
+    flex:1;
+    padding:9px;
+  }
+
+  .grid{
+    grid-template-columns:1fr;
+  }
+
+  .full{
+    grid-column:auto;
+  }
+
+  .panel{
+    padding:15px;
+  }
+
+  .actions button{
+    width:100%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="wrap">
+
+<header class="top">
+
+<a href="https://rap16barvote-jungle.vercel.app/">
+<div class="brand">RAP JUNGLE</div>
+<div class="sub">CRÉATION DE FICHE ARTISTE</div>
+</a>
+
+<nav class="nav">
+
+<a class="btn secondary"
+href="https://rap16barvote-jungle.vercel.app/">
+ACCUEIL
+</a>
+
+<a class="btn secondary"
+href="https://r-pertoirerapjungle.vercel.app/">
+RÉPERTOIRE
+</a>
+
+<a class="btn secondary"
+href="https://rapjunglevip.vercel.app/">
+VIP
+</a>
+
+</nav>
+
+</header>
+
+
+<main>
+
+<section class="hero">
+
+<div class="eyebrow">
+TON IDENTITÉ ARTISTIQUE
+</div>
+
+<h1>
+Crée ta fiche artiste.
+</h1>
+
+<p>
+Crée ton compte Rap Jungle, ajoute ta photo et construis ton profil professionnel.
+Une fois envoyé, ton profil sera placé en attente de validation par l’administration.
+</p>
+
+</section>
+
+
+<section class="panel account-panel">
+
+<h2>Compte artiste</h2>
+
+<div class="account-state">
+
+<div>
+
+<div id="accountLabel" class="disconnected">
+Aucun compte connecté
+</div>
+
+<div id="accountEmail" class="small">
+Crée ton compte ou connecte-toi.
+</div>
+
+</div>
+
+<button
+type="button"
+class="danger"
+id="logoutButton"
+style="display:none">
+DÉCONNEXION
+</button>
+
+</div>
+
+
+<div id="authForms">
+
+<div class="grid">
+
+<div>
+
+<label for="accountEmailInput">
+Courriel
+<span class="required">*</span>
+</label>
+
+<input
+id="accountEmailInput"
+type="email"
+autocomplete="email"
+placeholder="artiste@exemple.com">
+
+</div>
+
+
+<div>
+
+<label for="accountPassword">
+Mot de passe
+<span class="required">*</span>
+</label>
+
+<input
+id="accountPassword"
+type="password"
+autocomplete="current-password"
+minlength="8"
+placeholder="Minimum 8 caractères">
+
+</div>
+
+</div>
+
+
+<div class="actions" style="margin-top:16px">
+
+<button
+type="button"
+class="ghost"
+id="loginButton">
+J’AI DÉJÀ UN COMPTE
+</button>
+
+<button
+type="button"
+class="goodbtn"
+id="signupButton">
+CRÉER MON COMPTE
+</button>
+
+</div>
+
+</div>
+
+
+<div
+id="authMessage"
+class="messagebox notice"
+role="status">
+</div>
+
+</section>
+
+
+<div class="layout">
+
+
+<form id="artistForm" class="locked">
+
+
+<section class="panel">
+
+<h2>Identité</h2>
+
+<div class="small">
+Les informations principales visibles dans le répertoire.
+</div>
+
+
+<div class="grid">
+
+<div>
+
+<label for="stageName">
+Nom d’artiste ou du groupe
+<span class="required">*</span>
+</label>
+
+<input
+id="stageName"
+name="stageName"
+required
+maxlength="80"
+placeholder="Nom public">
+
+</div>
+
+
+<div>
+
+<label for="artistType">
+Type de profil
+<span class="required">*</span>
+</label>
+
+<select
+id="artistType"
+name="artistType"
+required>
+
+<option value="">Choisir</option>
+<option>Artiste solo</option>
+<option>Groupe</option>
+<option>MC / rappeur</option>
+<option>DJ</option>
+<option>Beatmaker</option>
+<option>Producteur</option>
+<option>Auteur-compositeur</option>
+
+</select>
+
+</div>
+
+
+<div>
+
+<label for="region">
+Région
+<span class="required">*</span>
+</label>
+
+<select
+id="region"
+name="region"
+required>
+
+<option value="">Choisir</option>
+<option>Montréal</option>
+<option>Laval</option>
+<option>Lanaudière</option>
+<option>Laurentides</option>
+<option>Montérégie</option>
+<option>Mauricie</option>
+<option>Capitale-Nationale</option>
+<option>Saguenay–Lac-Saint-Jean</option>
+<option>Estrie</option>
+<option>Outaouais</option>
+<option>Autre région</option>
+
+</select>
+
+</div>
+
+
+<div>
+
+<label for="genre">
+Style ou discipline
+<span class="required">*</span>
+</label>
+
+<input
+id="genre"
+name="genre"
+required
+maxlength="80"
+placeholder="Rap, rock, DJ, beatmaker…">
+
+</div>
+
+
+<div>
+
+<label for="experienceYears">
+Années d’expérience
+</label>
+
+<input
+id="experienceYears"
+name="experienceYears"
+type="number"
+min="0"
+max="80"
+placeholder="Ex. 6">
+
+</div>
+
+
+<div class="full">
+
+<label for="photoFile">
+Photo de profil
+</label>
+
+<div class="filebox">
+
+<input
+id="photoFile"
+name="photoFile"
+type="file"
+accept="image/jpeg,image/png,image/webp">
+
+<div class="small">
+JPG, PNG ou WebP — maximum 5 Mo.
+</div>
+
+</div>
+
+</div>
+
+
+<div class="full">
+
+<label for="presentation">
+Présentation courte
+<span class="required">*</span>
+</label>
+
+<textarea
+id="presentation"
+name="presentation"
+required
+maxlength="400"
+placeholder="Présente ton projet en quelques phrases."></textarea>
+
+</div>
+
+
+<div class="full">
+
+<label for="bio">
+Biographie complète
+<span class="required">*</span>
+</label>
+
+<textarea
+id="bio"
+name="bio"
+required
+maxlength="1800"
+placeholder="Origine du projet, parcours, identité et direction artistique."></textarea>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="panel">
+
+<h2>Expérience</h2>
+
+<div class="grid">
+
+<div class="full">
+
+<label for="experience">
+Expériences et faits marquants
+</label>
+
+<textarea
+id="experience"
+name="experience"
+placeholder="Spectacles, sorties, collaborations, distinctions, médias…"></textarea>
+
+</div>
+
+
+<div>
+
+<label for="influences">
+Influences
+</label>
+
+<textarea
+id="influences"
+name="influences"
+placeholder="Artistes, mouvements ou univers."></textarea>
+
+</div>
+
+
+<div>
+
+<label for="currentProject">
+Projet actuel
+</label>
+
+<textarea
+id="currentProject"
+name="currentProject"
+placeholder="Single, EP, tournée, création en cours…"></textarea>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="panel">
+
+<h2>Mini-conférence de presse</h2>
+
+<div class="small">
+Réponds naturellement. Ces réponses donnent une voix humaine à ta fiche.
+</div>
+
+
+<div class="press">
+
+<h3>
+Qu’est-ce qui te distingue?
+</h3>
+
+<textarea
+name="distinctive"
+aria-label="Ce qui vous distingue"></textarea>
+
+</div>
+
+
+<div class="press">
+
+<h3>
+Quel message veux-tu transmettre?
+</h3>
+
+<textarea
+name="message"
+aria-label="Message artistique"></textarea>
+
+</div>
+
+
+<div class="press">
+
+<h3>
+Qu’est-ce que tu prépares présentement?
+</h3>
+
+<textarea
+name="preparing"
+aria-label="Projet en préparation"></textarea>
+
+</div>
+
+
+<div class="press">
+
+<h3>
+Quel type de collaboration recherches-tu?
+</h3>
+
+<textarea
+name="collaboration"
+aria-label="Collaborations recherchées"></textarea>
+
+</div>
+
+</section>
+
+
+<section class="panel">
+
+<h2>Médias, merch et contact</h2>
+
+<div class="grid">
+
+<div>
+
+<label for="social">
+Réseau social principal
+</label>
+
+<input
+id="social"
+name="social"
+type="url"
+placeholder="https://...">
+
+</div>
+
+
+<div>
+
+<label for="website">
+Site Web
+</label>
+
+<input
+id="website"
+name="website"
+type="url"
+placeholder="https://...">
+
+</div>
+
+
+<div>
+
+<label for="spotify">
+Spotify ou musique
+</label>
+
+<input
+id="spotify"
+name="spotify"
+type="url"
+placeholder="https://...">
+
+</div>
+
+
+<div>
+
+<label for="youtube">
+YouTube ou vidéo
+</label>
+
+<input
+id="youtube"
+name="youtube"
+type="url"
+placeholder="https://...">
+
+</div>
+
+
+<div>
+
+<label for="merchLink">
+Lien vers le merch
+</label>
+
+<input
+id="merchLink"
+name="merchLink"
+type="url"
+placeholder="https://...">
+
+</div>
+
+
+<div>
+
+<label for="bookingEmail">
+Courriel professionnel
+</label>
+
+<input
+id="bookingEmail"
+name="bookingEmail"
+type="email"
+placeholder="booking@...">
+
+</div>
+
+
+<div class="full">
+
+<label for="merchText">
+Présentation du merch
+</label>
+
+<textarea
+id="merchText"
+name="merchText"
+placeholder="Produits, collections et disponibilité."></textarea>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="panel">
+
+<div class="notice">
+La fiche sera enregistrée avec le statut
+<strong>EN ATTENTE</strong>.
+
+Elle apparaîtra dans le répertoire uniquement après son approbation par Rap Jungle.
+</div>
+
+
+<div
+id="formMessage"
+class="messagebox notice"
+role="status"
+aria-live="polite">
+</div>
+
+
+<div class="actions">
+
+<button
+type="reset"
+class="ghost">
+EFFACER
+</button>
+
+<button
+type="submit"
+class="goodbtn"
+id="submitButton">
+ENVOYER MA FICHE
+</button>
+
+</div>
+
+</section>
+
 </form>
-<aside class="preview"><section class="panel"><h2>Aperçu</h2><div class="small" style="margin-bottom:12px">La carte se met à jour pendant que tu écris.</div><div class="profile-card"><div class="preview-cover"><div class="preview-avatar" id="previewAvatar">RJ</div></div><div class="preview-body"><div class="meta" id="previewMeta">TYPE · RÉGION</div><h3 id="previewName">Ton nom d’artiste</h3><p id="previewGenre">Style ou discipline</p><p id="previewText">Ta présentation courte apparaîtra ici.</p></div></div></section></aside></div></main><footer>RAP JUNGLE × MEYDEN — Création de fiche artiste</footer></div>
+
+
+<aside class="preview">
+
+<section class="panel">
+
+<h2>Aperçu</h2>
+
+<div class="small" style="margin-bottom:12px">
+La carte se met à jour pendant que tu écris.
+</div>
+
+
+<div class="profile-card">
+
+<div class="preview-cover">
+
+<div
+class="preview-avatar"
+id="previewAvatar">
+RJ
+</div>
+
+</div>
+
+
+<div class="preview-body">
+
+<div
+class="meta"
+id="previewMeta">
+TYPE · RÉGION
+</div>
+
+<h3 id="previewName">
+Ton nom d’artiste
+</h3>
+
+<p id="previewGenre">
+Style ou discipline
+</p>
+
+<p id="previewText">
+Ta présentation courte apparaîtra ici.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+</aside>
+
+</div>
+
+</main>
+
+
+<footer>
+RAP JUNGLE × MEYDEN — Création de fiche artiste
+</footer>
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+
 <script>
-const SUPABASE_URL='https://agijgxiljamrseyzvshr.supabase.co';
-const SUPABASE_KEY='sb_publishable_T-QzG6_U5C2P63c8DTULtA_hv5AlF02';
-const form=document.querySelector('#artistForm');
-const submitButton=document.querySelector('#submitButton');
-const successBox=document.querySelector('#success');
-const esc=s=>String(s||'').replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
-const safeImage=u=>/^https?:\/\//i.test(u||'')?u:'';
-const optional=v=>{const value=String(v||'').trim();return value||null};
-function initials(n){return String(n||'RJ').split(/\s+/).slice(0,2).map(x=>x[0]||'').join('').toUpperCase()}
-function preview(){const d=new FormData(form),name=d.get('stageName')||'Ton nom d’artiste',img=safeImage(d.get('photo'));document.querySelector('#previewName').textContent=name;document.querySelector('#previewMeta').textContent=`${d.get('artistType')||'TYPE'} · ${d.get('region')||'RÉGION'}`;document.querySelector('#previewGenre').textContent=d.get('genre')||'Style ou discipline';document.querySelector('#previewText').textContent=d.get('presentation')||'Ta présentation courte apparaîtra ici.';document.querySelector('#previewAvatar').innerHTML=img?`<img src="${esc(img)}" alt="">`:esc(initials(name))}
-form.addEventListener('input',preview);
-form.addEventListener('reset',()=>setTimeout(preview));
-form.addEventListener('submit',async e=>{
-  e.preventDefault();
-  if(!form.reportValidity())return;
-  const d=new FormData(form);
-  const years=String(d.get('experienceYears')||'').trim();
-  const payload={
-    stage_name:String(d.get('stageName')).trim(),artist_type:String(d.get('artistType')).trim(),region:String(d.get('region')).trim(),genre:String(d.get('genre')).trim(),experience_years:years===''?null:Number(years),presentation:String(d.get('presentation')).trim(),bio:String(d.get('bio')).trim(),experience:optional(d.get('experience')),influences:optional(d.get('influences')),current_project:optional(d.get('currentProject')),press_distinctive:optional(d.get('distinctive')),press_message:optional(d.get('message')),press_preparing:optional(d.get('preparing')),press_collaboration:optional(d.get('collaboration')),social_url:optional(d.get('social')),website_url:optional(d.get('website')),spotify_url:optional(d.get('spotify')),youtube_url:optional(d.get('youtube')),merch_url:optional(d.get('merchLink')),merch_text:optional(d.get('merchText')),booking_email:optional(d.get('bookingEmail')),photo_url:optional(d.get('photo'))
-  };
-  submitButton.disabled=true;submitButton.textContent='ENVOI EN COURS…';successBox.classList.remove('show');
+
+const SUPABASE_URL =
+'https://hixkezzjgxfzmymkfyko.supabase.co';
+
+const SUPABASE_KEY =
+'sb_publishable_5yp_LpH40HLd5C4btrltyw_r7wUrSFS';
+
+const STORAGE_BUCKET =
+'artist-avatars';
+
+
+const { createClient } = supabase;
+
+const db =
+createClient(
+  SUPABASE_URL,
+  SUPABASE_KEY
+);
+
+
+const form =
+document.querySelector('#artistForm');
+
+const submitButton =
+document.querySelector('#submitButton');
+
+const formMessage =
+document.querySelector('#formMessage');
+
+const authMessage =
+document.querySelector('#authMessage');
+
+const signupButton =
+document.querySelector('#signupButton');
+
+const loginButton =
+document.querySelector('#loginButton');
+
+const logoutButton =
+document.querySelector('#logoutButton');
+
+const authForms =
+document.querySelector('#authForms');
+
+const accountLabel =
+document.querySelector('#accountLabel');
+
+const accountEmail =
+document.querySelector('#accountEmail');
+
+const emailInput =
+document.querySelector('#accountEmailInput');
+
+const passwordInput =
+document.querySelector('#accountPassword');
+
+const photoInput =
+document.querySelector('#photoFile');
+
+
+let currentUser = null;
+
+let localPreviewURL = null;
+
+
+function optional(value){
+
+  const v =
+  String(value || '').trim();
+
+  return v || null;
+
+}
+
+
+function initials(name){
+
+  return String(name || 'RJ')
+  .split(/\s+/)
+  .slice(0,2)
+  .map(x => x[0] || '')
+  .join('')
+  .toUpperCase();
+
+}
+
+
+function showMessage(element,message,type='success'){
+
+  element.textContent =
+  message;
+
+  element.className =
+  'messagebox notice show ' + type;
+
+}
+
+
+function clearMessage(element){
+
+  element.textContent = '';
+
+  element.className =
+  'messagebox notice';
+
+}
+
+
+function preview(){
+
+  const data =
+  new FormData(form);
+
+  const name =
+  data.get('stageName') ||
+  'Ton nom d’artiste';
+
+
+  document.querySelector('#previewName').textContent =
+  name;
+
+
+  document.querySelector('#previewMeta').textContent =
+  `${data.get('artistType') || 'TYPE'} · ${data.get('region') || 'RÉGION'}`;
+
+
+  document.querySelector('#previewGenre').textContent =
+  data.get('genre') ||
+  'Style ou discipline';
+
+
+  document.querySelector('#previewText').textContent =
+  data.get('presentation') ||
+  'Ta présentation courte apparaîtra ici.';
+
+
+  const avatar =
+  document.querySelector('#previewAvatar');
+
+
+  if(localPreviewURL){
+
+    avatar.innerHTML =
+    `<img src="${localPreviewURL}" alt="Photo de profil">`;
+
+  }else{
+
+    avatar.textContent =
+    initials(name);
+
+  }
+
+}
+
+
+async function refreshSession(){
+
+  const {
+    data,
+    error
+  } =
+  await db.auth.getUser();
+
+
+  if(
+    error ||
+    !data ||
+    !data.user
+  ){
+
+    currentUser = null;
+
+    accountLabel.textContent =
+    'Aucun compte connecté';
+
+    accountLabel.className =
+    'disconnected';
+
+    accountEmail.textContent =
+    'Crée ton compte ou connecte-toi.';
+
+    authForms.style.display =
+    'block';
+
+    logoutButton.style.display =
+    'none';
+
+    form.classList.add('locked');
+
+    return;
+
+  }
+
+
+  currentUser =
+  data.user;
+
+
+  accountLabel.textContent =
+  'Compte artiste connecté';
+
+  accountLabel.className =
+  'connected';
+
+  accountEmail.textContent =
+  currentUser.email || 'Utilisateur connecté';
+
+  authForms.style.display =
+  'none';
+
+  logoutButton.style.display =
+  'inline-flex';
+
+  form.classList.remove('locked');
+
+
+  await loadExistingProfile();
+
+}
+
+
+
+signupButton.addEventListener(
+'click',
+async ()=>{
+
+  clearMessage(authMessage);
+
+  const email =
+  emailInput.value.trim();
+
+  const password =
+  passwordInput.value;
+
+
+  if(!email){
+
+    showMessage(
+      authMessage,
+      'Entre ton adresse courriel.',
+      'error'
+    );
+
+    return;
+
+  }
+
+
+  if(password.length < 8){
+
+    showMessage(
+      authMessage,
+      'Le mot de passe doit contenir au moins 8 caractères.',
+      'error'
+    );
+
+    return;
+
+  }
+
+
+  signupButton.disabled =
+  true;
+
+  signupButton.textContent =
+  'CRÉATION…';
+
+
   try{
-    const response=await fetch(`${SUPABASE_URL}/rest/v1/artist_profiles`,{method:'POST',headers:{apikey:SUPABASE_KEY,Authorization:`Bearer ${SUPABASE_KEY}`,'Content-Type':'application/json',Prefer:'return=minimal'},body:JSON.stringify(payload)});
-    if(!response.ok)throw new Error(`HTTP ${response.status}`);
-    successBox.style.borderColor='#2f9c63';successBox.style.background='#14271b';successBox.textContent='Fiche envoyée avec succès. Rap Jungle la vérifiera avant sa publication dans le répertoire.';successBox.classList.add('show');form.reset();successBox.scrollIntoView({behavior:'smooth',block:'center'});
-  }catch(error){console.error(error);successBox.style.borderColor='#b84848';successBox.style.background='#2b1515';successBox.textContent='Impossible d’envoyer la fiche pour le moment. Vérifie ta connexion et réessaie.';successBox.classList.add('show')}
-  finally{submitButton.disabled=false;submitButton.textContent='ENVOYER MA FICHE'}
-});
+
+    const {
+      data,
+      error
+    } =
+    await db.auth.signUp({
+
+      email,
+
+      password,
+
+      options:{
+        emailRedirectTo:
+        window.location.href.split('?')[0]
+      }
+
+    });
+
+
+    if(error)
+    throw error;
+
+
+    if(data.session){
+
+      showMessage(
+        authMessage,
+        'Compte créé avec succès.',
+        'success'
+      );
+
+      await refreshSession();
+
+    }else{
+
+      showMessage(
+        authMessage,
+        'Compte créé. Vérifie ton courriel pour confirmer ton inscription.',
+        'success'
+      );
+
+    }
+
+
+  }catch(error){
+
+    console.error(error);
+
+    showMessage(
+      authMessage,
+      error.message ||
+      'Impossible de créer le compte.',
+      'error'
+    );
+
+  }
+
+  finally{
+
+    signupButton.disabled =
+    false;
+
+    signupButton.textContent =
+    'CRÉER MON COMPTE';
+
+  }
+
+}
+);
+
+
+
+loginButton.addEventListener(
+'click',
+async ()=>{
+
+  clearMessage(authMessage);
+
+  const email =
+  emailInput.value.trim();
+
+  const password =
+  passwordInput.value;
+
+
+  if(!email || !password){
+
+    showMessage(
+      authMessage,
+      'Entre ton courriel et ton mot de passe.',
+      'error'
+    );
+
+    return;
+
+  }
+
+
+  loginButton.disabled =
+  true;
+
+  loginButton.textContent =
+  'CONNEXION…';
+
+
+  try{
+
+    const { error } =
+    await db.auth.signInWithPassword({
+      email,
+      password
+    });
+
+
+    if(error)
+    throw error;
+
+
+    showMessage(
+      authMessage,
+      'Connexion réussie.',
+      'success'
+    );
+
+
+    await refreshSession();
+
+
+  }catch(error){
+
+    console.error(error);
+
+    showMessage(
+      authMessage,
+      'Connexion impossible. Vérifie ton courriel et ton mot de passe.',
+      'error'
+    );
+
+  }
+
+  finally{
+
+    loginButton.disabled =
+    false;
+
+    loginButton.textContent =
+    'J’AI DÉJÀ UN COMPTE';
+
+  }
+
+}
+);
+
+
+
+logoutButton.addEventListener(
+'click',
+async ()=>{
+
+  await db.auth.signOut();
+
+  currentUser = null;
+
+  form.reset();
+
+  localPreviewURL = null;
+
+  preview();
+
+  await refreshSession();
+
+}
+);
+
+
+
+photoInput.addEventListener(
+'change',
+()=>{
+
+  clearMessage(formMessage);
+
+  const file =
+  photoInput.files[0];
+
+
+  if(localPreviewURL &&
+     localPreviewURL.startsWith('blob:')){
+
+    URL.revokeObjectURL(localPreviewURL);
+
+  }
+
+
+  localPreviewURL = null;
+
+
+  if(!file){
+
+    preview();
+
+    return;
+
+  }
+
+
+  const allowed = [
+    'image/jpeg',
+    'image/png',
+    'image/webp'
+  ];
+
+
+  if(!allowed.includes(file.type)){
+
+    photoInput.value = '';
+
+    showMessage(
+      formMessage,
+      'Format refusé. Utilise JPG, PNG ou WebP.',
+      'error'
+    );
+
+    preview();
+
+    return;
+
+  }
+
+
+  if(file.size > 5 * 1024 * 1024){
+
+    photoInput.value = '';
+
+    showMessage(
+      formMessage,
+      'La photo dépasse 5 Mo.',
+      'error'
+    );
+
+    preview();
+
+    return;
+
+  }
+
+
+  localPreviewURL =
+  URL.createObjectURL(file);
+
+  preview();
+
+}
+);
+
+
+
+form.addEventListener(
+'input',
+preview
+);
+
+
+
+form.addEventListener(
+'reset',
+()=>{
+
+  setTimeout(()=>{
+
+    if(
+      localPreviewURL &&
+      localPreviewURL.startsWith('blob:')
+    ){
+
+      URL.revokeObjectURL(localPreviewURL);
+
+    }
+
+    localPreviewURL = null;
+
+    preview();
+
+  },0);
+
+}
+);
+
+
+
+async function uploadAvatar(){
+
+  const file =
+  photoInput.files[0];
+
+
+  if(!file)
+  return null;
+
+
+  if(!currentUser)
+  throw new Error(
+    'Utilisateur non connecté.'
+  );
+
+
+  const extension =
+  file.name
+  .split('.')
+  .pop()
+  .toLowerCase()
+  .replace(/[^a-z0-9]/g,'');
+
+
+  const path =
+  `${currentUser.id}/${Date.now()}-${crypto.randomUUID()}.${extension || 'jpg'}`;
+
+
+  const { error } =
+  await db.storage
+  .from(STORAGE_BUCKET)
+  .upload(
+    path,
+    file,
+    {
+      cacheControl:'3600',
+      upsert:false,
+      contentType:file.type
+    }
+  );
+
+
+  if(error)
+  throw error;
+
+
+  const { data } =
+  db.storage
+  .from(STORAGE_BUCKET)
+  .getPublicUrl(path);
+
+
+  return data.publicUrl;
+
+}
+
+
+
+async function loadExistingProfile(){
+
+  if(!currentUser)
+  return;
+
+
+  const {
+    data,
+    error
+  } =
+  await db
+  .from('artist_profiles')
+  .select('*')
+  .eq('user_id',currentUser.id)
+  .maybeSingle();
+
+
+  if(error){
+
+    console.error(error);
+
+    return;
+
+  }
+
+
+  if(!data)
+  return;
+
+
+  document.querySelector('#stageName').value =
+  data.stage_name || '';
+
+  document.querySelector('#artistType').value =
+  data.artist_type || '';
+
+  document.querySelector('#region').value =
+  data.region || '';
+
+  document.querySelector('#genre').value =
+  data.genre || '';
+
+  document.querySelector('#experienceYears').value =
+  data.experience_years ?? '';
+
+  document.querySelector('#presentation').value =
+  data.presentation || '';
+
+  document.querySelector('#bio').value =
+  data.bio || '';
+
+  document.querySelector('#experience').value =
+  data.experience || '';
+
+  document.querySelector('#influences').value =
+  data.influences || '';
+
+  document.querySelector('#currentProject').value =
+  data.current_project || '';
+
+  document.querySelector('[name="distinctive"]').value =
+  data.press_distinctive || '';
+
+  document.querySelector('[name="message"]').value =
+  data.press_message || '';
+
+  document.querySelector('[name="preparing"]').value =
+  data.press_preparing || '';
+
+  document.querySelector('[name="collaboration"]').value =
+  data.press_collaboration || '';
+
+  document.querySelector('#social').value =
+  data.social_url || '';
+
+  document.querySelector('#website').value =
+  data.website_url || '';
+
+  document.querySelector('#spotify').value =
+  data.spotify_url || '';
+
+  document.querySelector('#youtube').value =
+  data.youtube_url || '';
+
+  document.querySelector('#merchLink').value =
+  data.merch_url || '';
+
+  document.querySelector('#merchText').value =
+  data.merch_text || '';
+
+  document.querySelector('#bookingEmail').value =
+  data.booking_email || '';
+
+
+  if(data.photo_url){
+
+    localPreviewURL =
+    data.photo_url;
+
+  }
+
+
+  submitButton.textContent =
+  'METTRE À JOUR MA FICHE';
+
+
+  showMessage(
+    formMessage,
+    `Ta fiche existe déjà. Statut : ${String(data.status || 'pending').toUpperCase()}.`,
+    'success'
+  );
+
+
+  preview();
+
+}
+
+
+
+form.addEventListener(
+'submit',
+async event=>{
+
+  event.preventDefault();
+
+  clearMessage(formMessage);
+
+
+  if(!currentUser){
+
+    showMessage(
+      formMessage,
+      'Tu dois te connecter avant d’envoyer ta fiche.',
+      'error'
+    );
+
+    return;
+
+  }
+
+
+  if(!form.reportValidity())
+  return;
+
+
+  submitButton.disabled =
+  true;
+
+  submitButton.textContent =
+  'ENREGISTREMENT…';
+
+
+  try{
+
+    const data =
+    new FormData(form);
+
+
+    const years =
+    String(
+      data.get('experienceYears') || ''
+    ).trim();
+
+
+    const {
+      data:existing,
+      error:lookupError
+    } =
+    await db
+    .from('artist_profiles')
+    .select('user_id,photo_url')
+    .eq('user_id',currentUser.id)
+    .maybeSingle();
+
+
+    if(lookupError)
+    throw lookupError;
+
+
+    let photoURL =
+    existing?.photo_url || null;
+
+
+    if(photoInput.files[0]){
+
+      submitButton.textContent =
+      'TÉLÉVERSEMENT PHOTO…';
+
+      photoURL =
+      await uploadAvatar();
+
+    }
+
+
+    const payload = {
+
+      user_id:
+      currentUser.id,
+
+      stage_name:
+      String(data.get('stageName')).trim(),
+
+      artist_type:
+      String(data.get('artistType')).trim(),
+
+      region:
+      String(data.get('region')).trim(),
+
+      genre:
+      String(data.get('genre')).trim(),
+
+      experience_years:
+      years === ''
+      ? null
+      : Number(years),
+
+      presentation:
+      String(data.get('presentation')).trim(),
+
+      bio:
+      String(data.get('bio')).trim(),
+
+      experience:
+      optional(data.get('experience')),
+
+      influences:
+      optional(data.get('influences')),
+
+      current_project:
+      optional(data.get('currentProject')),
+
+      press_distinctive:
+      optional(data.get('distinctive')),
+
+      press_message:
+      optional(data.get('message')),
+
+      press_preparing:
+      optional(data.get('preparing')),
+
+      press_collaboration:
+      optional(data.get('collaboration')),
+
+      social_url:
+      optional(data.get('social')),
+
+      website_url:
+      optional(data.get('website')),
+
+      spotify_url:
+      optional(data.get('spotify')),
+
+      youtube_url:
+      optional(data.get('youtube')),
+
+      merch_url:
+      optional(data.get('merchLink')),
+
+      merch_text:
+      optional(data.get('merchText')),
+
+      booking_email:
+      optional(data.get('bookingEmail')),
+
+      photo_url:
+      photoURL,
+
+      status:
+      'pending',
+
+      updated_at:
+      new Date().toISOString()
+
+    };
+
+
+    let saveError;
+
+
+    if(existing){
+
+      const { error } =
+      await db
+      .from('artist_profiles')
+      .update(payload)
+      .eq('user_id',currentUser.id);
+
+      saveError =
+      error;
+
+    }else{
+
+      const { error } =
+      await db
+      .from('artist_profiles')
+      .insert(payload);
+
+      saveError =
+      error;
+
+    }
+
+
+    if(saveError)
+    throw saveError;
+
+
+    showMessage(
+      formMessage,
+      existing
+      ? 'Ta fiche a été mise à jour. Elle est maintenant en attente de validation Rap Jungle.'
+      : 'Fiche envoyée avec succès. Rap Jungle la vérifiera avant sa publication.',
+      'success'
+    );
+
+
+    submitButton.textContent =
+    'METTRE À JOUR MA FICHE';
+
+
+    formMessage.scrollIntoView({
+      behavior:'smooth',
+      block:'center'
+    });
+
+
+    await loadExistingProfile();
+
+
+  }catch(error){
+
+    console.error(error);
+
+    showMessage(
+      formMessage,
+      'Impossible d’enregistrer la fiche : ' +
+      (error.message || 'erreur inconnue'),
+      'error'
+    );
+
+  }
+
+  finally{
+
+    submitButton.disabled =
+    false;
+
+
+    if(
+      submitButton.textContent === 'ENREGISTREMENT…' ||
+      submitButton.textContent === 'TÉLÉVERSEMENT PHOTO…'
+    ){
+
+      submitButton.textContent =
+      'ENVOYER MA FICHE';
+
+    }
+
+  }
+
+}
+);
+
+
+
+db.auth.onAuthStateChange(
+()=>{
+
+  setTimeout(
+    refreshSession,
+    0
+  );
+
+}
+);
+
+
 preview();
-</script></body></html>
+
+refreshSession();
+
+</script>
+
+</body>
+</html>
