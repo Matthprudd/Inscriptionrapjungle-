@@ -1108,6 +1108,9 @@ const SUPABASE_KEY =
 const STORAGE_BUCKET =
 'artist-avatars';
 
+const PLATFORM_API =
+SUPABASE_URL + '/functions/v1/rj-platform';
+
 
 const { createClient } = supabase;
 
@@ -1980,13 +1983,7 @@ async event=>{
       optional(data.get('bookingEmail')),
 
       photo_url:
-      photoURL,
-
-      status:
-      'pending',
-
-      updated_at:
-      new Date().toISOString()
+      photoURL
 
     };
 
@@ -2020,6 +2017,24 @@ async event=>{
 
     if(saveError)
     throw saveError;
+
+    // Envoie la confirmation au propriétaire du compte et met l'administration en copie.
+    try{
+      const { data:{ session } } = await db.auth.getSession();
+      if(session){
+        await fetch(PLATFORM_API,{
+          method:'POST',
+          headers:{
+            'Content-Type':'application/json',
+            'apikey':SUPABASE_KEY,
+            'Authorization':'Bearer ' + session.access_token
+          },
+          body:JSON.stringify({action:'notify_profile_saved'})
+        });
+      }
+    }catch(notificationError){
+      console.warn('Notification en attente',notificationError);
+    }
 
 
     showMessage(
